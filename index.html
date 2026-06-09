@@ -101,10 +101,9 @@ nav {
 .stat-item { padding:0 20px; }
 .stat-num {
   font-size:clamp(36px,5vw,52px); font-weight:700;
-  letter-spacing:-0.04em; color:#1d1d1f; display:block;
+  letter-spacing:-0.04em; color:#0066cc; display:block;
   margin-bottom:6px;
 }
-.stat-num span { color:#0066cc; }
 .stat-desc { font-size:13px; color:#6e6e73; font-weight:400; line-height:1.4; }
 
 /* LOGOS */
@@ -303,6 +302,13 @@ footer {
   transition:all .3s; max-width:160px;
 }
 .logo-link:hover img { filter:grayscale(0%); opacity:1; }
+.s-coming {
+  position:absolute; top:16px; right:16px;
+  background:#fff3e0; color:#e65100;
+  font-size:10px; font-weight:700;
+  padding:3px 10px; border-radius:980px;
+  letter-spacing:.04em; text-transform:uppercase;
+}
 </style>
 </head>
 <body>
@@ -315,6 +321,7 @@ footer {
   <ul class="nav-links">
     <li><a href="#servicios">Servicios</a></li>
     <li><a href="#resultados">Resultados</a></li>
+    <li><a href="#apps">Apps B2B</a></li>
     <li><a href="#ecosistema">Ecosistema</a></li>
     <li><a href="#contacto" class="nav-cta">Hablemos</a></li>
   </ul>
@@ -343,19 +350,19 @@ footer {
 <!-- STATS -->
 <div class="stat-strip">
   <div class="stat-item">
-    <span class="stat-num"><span>3.5</span>K+</span>
+    <span class="stat-num" data-target="3500" data-suffix="+" data-prefix="">0</span>
     <span class="stat-desc">leads mensuales<br>sector fitness</span>
   </div>
   <div class="stat-item">
-    <span class="stat-num"><span>4</span>x</span>
+    <span class="stat-num" data-target="4" data-suffix="x" data-prefix="">0</span>
     <span class="stat-desc">crecimiento de leads<br>en 6 meses</span>
   </div>
   <div class="stat-item">
-    <span class="stat-num"><span>7</span>+</span>
+    <span class="stat-num" data-target="7" data-suffix="+" data-prefix="">0</span>
     <span class="stat-desc">marcas activas<br>gestionadas</span>
   </div>
   <div class="stat-item">
-    <span class="stat-num"><span>+1</span> año</span>
+    <span class="stat-num" data-target="12" data-suffix="" data-prefix="+" data-label="meses">0</span>
     <span class="stat-desc">resultados consistentes<br>y sostenidos</span>
   </div>
 </div>
@@ -415,6 +422,18 @@ footer {
       <div class="s-title">Eventos & Activaciones</div>
       <div class="s-desc">Cobertura integral de eventos, activaciones de marca y estrategia de comunicación para lanzamientos en vivo.</div>
     </div>
+    <div class="s-card" style="position:relative;">
+      <span class="s-coming">Próximamente</span>
+      <span class="s-icon">🔍</span>
+      <div class="s-title">Google Ads</div>
+      <div class="s-desc">Campañas en Google Search, Display y YouTube. Captá clientes en el momento exacto en que te están buscando.</div>
+    </div>
+    <div class="s-card" style="position:relative;">
+      <span class="s-coming">Próximamente</span>
+      <span class="s-icon">📍</span>
+      <div class="s-title">Google Business</div>
+      <div class="s-desc">Optimización de tu perfil en Google Maps y búsquedas locales. Más visibilidad, más consultas, más clientes.</div>
+    </div>
   </div>
 </div>
 
@@ -445,6 +464,41 @@ footer {
         <div class="r-num"><span>+1</span></div>
         <div class="r-label">año de resultados consistentes y sostenidos</div>
       </div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- APPS B2B -->
+<div class="section" id="apps">
+  <div class="eyebrow">Soluciones digitales B2B</div>
+  <h2 class="section-h">Apps hechas para<br>negocios reales.</h2>
+  <p class="section-p">Desarrollamos software a medida para industrias específicas. Productos propios, listos para usar, con soporte incluido.</p>
+  <div class="eco-grid" style="margin-top:60px;">
+    <div class="eco-card fade-up">
+      <span class="eco-tag">Gimnasios</span>
+      <div class="eco-title">CodeGym</div>
+      <div class="eco-desc">Plataforma completa de gestión para gimnasios. Alumnos, pagos, rutinas, check-in, historial y KPIs. Todo en un solo lugar, sin complicaciones.</div>
+      <div style="margin-top:20px;font-size:13px;color:#0066cc;font-weight:500;">Software as a Service · Córdoba</div>
+    </div>
+    <div class="eco-card fade-up">
+      <span class="eco-tag">Barberías</span>
+      <div class="eco-title">BarberiaApp</div>
+      <div class="eco-desc">Sistema de turnos online, gestión de clientes y panel de administración. Reservas automáticas y recordatorios por WhatsApp.</div>
+      <div style="margin-top:20px;font-size:13px;color:#0066cc;font-weight:500;">Software as a Service · Córdoba</div>
+    </div>
+    <div class="eco-card fade-up">
+      <span class="eco-tag">Gastronomía</span>
+      <div class="eco-title">Hoyo 19 — Club de Café</div>
+      <div class="eco-desc">Sistema de membresías para cafeterías. Créditos mensuales, panel de recepción y app para socios. Fidelización inteligente.</div>
+      <div style="margin-top:20px;font-size:13px;color:#0066cc;font-weight:500;">Software as a Service · Córdoba</div>
+    </div>
+    <div class="eco-card fade-up" style="border:2px dashed #e0e0e5;background:#fafafa;">
+      <span class="eco-tag" style="background:#f0f0f0;color:#999;">Tu industria</span>
+      <div class="eco-title" style="color:#999;">¿Tu sector necesita una solución?</div>
+      <div class="eco-desc">Desarrollamos apps B2B a medida. Si tenés un problema recurrente en tu industria, lo convertimos en un producto digital.</div>
+      <a href="#contacto" style="margin-top:20px;font-size:13px;color:#0066cc;font-weight:500;text-decoration:none;display:inline-block;">Hablemos →</a>
     </div>
   </div>
 </div>
@@ -516,6 +570,9 @@ footer {
     <a href="https://instagram.com/metrikaanalitica" class="btn-outline-w" target="_blank">
       @metrikaanalitica
     </a>
+    <a href="mailto:metrikaanalitica@gmail.com" class="btn-outline-w" target="_blank">
+      ✉️ metrikaanalitica@gmail.com
+    </a>
   </div>
 </div>
 
@@ -525,17 +582,60 @@ footer {
   <ul class="footer-links">
     <li><a href="#servicios">Servicios</a></li>
     <li><a href="#resultados">Resultados</a></li>
+    <li><a href="#apps">Apps B2B</a></li>
     <li><a href="#ecosistema">Ecosistema</a></li>
     <li><a href="#contacto">Contacto</a></li>
   </ul>
-  <div class="footer-copy">© 2026 Métrica Analítica</div>
+  <div class="footer-copy">© 2026 Métrica Analítica · <a href="mailto:metrikaanalitica@gmail.com" style="color:#aaa;text-decoration:none;">metrikaanalitica@gmail.com</a></div>
 </footer>
 
 <script>
+// Fade up observer
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.1 });
 document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+// Counter animation
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target);
+  const suffix = el.dataset.suffix || '';
+  const prefix = el.dataset.prefix || '';
+  const label = el.dataset.label || '';
+  const duration = 2000;
+  const frameRate = 60;
+  const totalFrames = Math.round(duration / (1000 / frameRate));
+  let frame = 0;
+
+  // Easing out cubic
+  const easeOut = t => 1 - Math.pow(1 - t, 3);
+
+  const counter = setInterval(() => {
+    frame++;
+    const progress = easeOut(frame / totalFrames);
+    const current = Math.round(progress * target);
+    el.textContent = prefix + current.toLocaleString('es-AR') + suffix + (label ? ' ' + label : '');
+    if (frame === totalFrames) {
+      el.textContent = prefix + target.toLocaleString('es-AR') + suffix + (label ? ' ' + label : '');
+      clearInterval(counter);
+    }
+  }, 1000 / frameRate);
+}
+
+// Trigger counters when stat strip enters viewport
+const statObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.stat-num[data-target]').forEach(el => {
+        animateCounter(el);
+      });
+      statObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.4 });
+
+const statStrip = document.querySelector('.stat-strip');
+if (statStrip) statObs.observe(statStrip);
 </script>
 </body>
 </html>
